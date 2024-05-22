@@ -1,0 +1,194 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Estilo de productos */
+.producto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    min-height: 400px; /* Ajusta la altura mínima según tus necesidades */
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre, .direccion {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Cambia nowrap a normal */
+    line-height: 1.5em; /* Ajusta la altura de línea según tu diseño */
+    height: 4.5em; /* Ajusta la altura mínima según la cantidad de líneas deseadas */
+}
+
+/* Estilo de imagen */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de botones */
+.btn-success {
+    background-color: #4ebbc5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    color: white;
+    background-color: #2980b9;
+}
+
+/* Estilo de fila de productos (mostrar 4 por fila) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+}
+
+/* Estilo de encabezados y textos */
+h1, h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h4, h5 {
+    margin-top: 10px;
+}
+
+h3 {
+    color: #333333;
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    color: #555555;
+    text-align: justify;
+}
+
+/* Estilo de filtro y ordenar */
+#buscar,
+#ordenar {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de fondo del resultado */
+#res {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo de texto de enlace */
+a {
+    text-align: center;
+    align-items: center;
+    color: #4ebbc5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: #2980b9;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 30px;
+}
+
+/* Estilo para los filtros */
+.filters-container {
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alinear los elementos al extremo derecho */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 20px auto; /* Margen exterior */
+    max-width: 700px; /* Ancho máximo */
+}
+
+.filters-container select,
+.filters-container input[type="text"],
+.filters-container button {
+    margin: 5px; /* Espaciado entre elementos */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluir el tamaño del borde y el relleno en el ancho y alto */
+    height: 40px; /* Altura fija para todos los elementos */
+    width: 180px; /* Ancho fijo para todos los elementos */
+}
+
+.filters-container select {
+    flex: 1; /* Utilizar flexibilidad para expandir al máximo */
+    min-width: 250px;
+}
+
+.filters-container input[type="text"] {
+    flex: 2; /* Utilizar flexibilidad para expandir al doble de ancho que el selector */
+}
+
+
+.filters-container button {
+    min-width: 120px; /* Ancho mínimo */
+    background-color: #4ebbc5; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Eliminar borde del botón */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.filters-container button:hover {
+    background-color: #3a9ca8; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
