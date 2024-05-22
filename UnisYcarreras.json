@@ -1,0 +1,55 @@
+[
+  {
+    "acronimo": "UP",
+    "nombre": "Universidad Panamericana",
+    "carreras": {
+      "Ciencias sociales": [
+        "Licenciatura en Psicología",
+        "Licenciatura en Administración y Dirección",
+        "Licenciatura en Administración y Dirección de Empresas Familiares",
+        "Administración y Finanzas",
+        "Licenciatura en Administración y Hospitalidad",
+        "Licenciatura en Administración y Mercadotecnia",
+        "Licenciatura en Administración y Negocios Internacionales",
+        "Administración y Recursos Humanos",
+        "Licenciatura en Contaduría",
+        "Dirección de Negocios Gastronómicos",
+        "Licenciatura en Economía",
+        "Administración y Hospitalidad",
+        "Licenciatura en Comunicación",
+        "Comunicación Audiovisual",
+        "Licenciatura en Derecho",
+        "Comunicación Periodística",
+        "Licenciatura en Comunicación",
+        "Publicidad y Relaciones Públicas",
+        "Pedagogía e Innovación Educativa",
+        "Psicopedagogía",
+        "Filosofía",
+        "Pedagogía"
+      ],
+      "Ciencias biologicas": ["Licenciatura en Enfermería"],
+      "Ciencias fisico-matematicas": ["No hay registros"],
+      "Arte y humanidades": ["No hay registros"]
+    }
+  },
+  {
+    "acronimo": "ITA",
+    "nombre": "Instituto Tecnológico de Aguascalientes",
+    "carreras": {
+      "Ciencias sociales": ["Licenciatura en Administración",
+                            "Ingeniería en Gestión Empresarial"],
+      "Ciencias biologicas": ["No hay registros"],
+      "Ciencias fisico-matematicas": ["Ingeniería en Química", 
+                                      "Ingeniería en Tecnologías de la Información",
+                                      "Ingeniería en Electrónica",
+                                      "Ingeniería en Eléctrica",
+                                      "Ingeniería en Mecánica",
+                                      "Ingeniería en Industrial",
+                                      "Ingeniería en Materiales",
+                                      "Ingeniería en Semiconductores"],
+      "Arte y humanidades": ["No hay registros"]
+    }
+  }
+]
+    
+    

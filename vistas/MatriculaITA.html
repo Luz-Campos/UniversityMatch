@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITA || UniversityMatch</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="../Estilos/style.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/stylevistaproductos.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/FooterStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-GDWlJng9xEwG1eYTTvWe4H9fA1Idb51fbrYw5YK51m6JzCj5lCR4gI6Rbmu1nCrXOjW1QrR7TjDXXESmtv5D5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTLCWXEBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4LTLCWXEBE');
+  </script>
+</head>
+
+<body onload="iniciarLectura()">
+  <!--Este es el encabezado de la página. Mostramos el logo y la barra de navegación-->
+  <section id="header">
+    <a href="../index.html"><img src="../img/Logo2.jpg" class="sin-borde" alt=" logo" title="Logo" width="250"></a>
+
+    <ul id="navbar">
+      <li><a href="../index.html" title="Landing-Page">Inicio</a></li>
+      <li><a href="../Formularios/Test.html" title="Test Vocacional">Test Vocacional</a></li>
+      <li><a class="active" href="../Rec_Catalogo/Catalogo.html" title="Universidades">Universidades</a></li>
+    </ul>
+  </section>
+
+  <section id="header2">
+    <ul id="navbar2">
+        <li><a href="Vista_ITA.html" title="Landing-Page">ITA</a></li>
+        <li><a href="Info_ITA.HTML" title="Landing-Page">Información General</a></li>
+        <li><a href="PlanITA.html" title="Test Vocacional">Plan de Estudios</a></li>
+        <li><a href="MatriculaITA.html" title="Matrícula">Matrícula</a></li>
+        <li><a class="active" href="IMGS_ITA.html" title="Universidades">Galería de Imágenes</a></li>
+        <li><a class="active" href="AplicarITA.html" title="Aplicar">¡Aplica ahora!</a></li>
+        <li><a href="https://ceneval.edu.mx/examenes-ingreso-exani_ii/" target="_blank">EXANII-II</a></li>
+        <button class="buttonLec" onclick="toggleSpeech()"><i class="fas fa-stop"></i> </button>
+        <button class="buttonLec" onclick="reiniciarLectura()"><i class="fas fa-play"></i> </button>   
+        <li><a href="https://aguascalientes.tecnm.mx/" target="_blank" class="btn-ir-pagina">Ir a la Página</a></li>
+    </ul>
+  </section>
+  
+
+  <!--Agregamos la imagen principal del producto y la información-->
+<h2>Costo de Matriculas</h2>
+  <table>
+    <tr>
+        <th class="centro">Carrera</th>
+        <th class="centro">Semestral</th>
+        <th class="centro">Anual</th>
+        <th class="centro">Con Beca Deportiva</th>
+        <th class="centro">Con Beca para Familiares de Empleados del Gobierno</th>
+    </tr>
+    <tr>
+        <td>Ingeniería en Tecnologías de la Información y Comunicaciones</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería en Gestión Empresarial</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería Química</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería Eléctrica</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería Electrónica</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería Industrial</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería en Materiales</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería Mecánica</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Ingeniería en Semiconductores</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+    <tr>
+        <td>Licenciatura en Administración</td>
+        <td class="centro">$2,850 MXN</td>
+        <td class="centro">$5,700 MXN</td>
+        <td class="centro">$1,425 MXN</td>
+        <td class="centro">$400 MXN</td>
+    </tr>
+</table>
+
+  <!--Pie de la página. Aquí mostramos información básica de la empresa-->
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><strong>Dirección:</strong> Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
+        <p><strong>Teléfono:</strong> 449 960 9129</p>
+        <p><strong>Horario de Atención:</strong> 9:00 - 20:00, Lunes - Domingo</p>
+      </div>
+      <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Formularios/Test.html">Test Vocacional</a></li>
+          <li><a href="../Rec_Catalogo/Catalogo.html">Universidades</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <ul class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Scripts -->
+
+  <script>
+    var speechSynthesisInstance;
+    var textoUniversidad = "En el Instituto Tecnológico de Aguascalientes, la matrícula se ha convertido en un tema de interés y preocupación para estudiantes y familias por igual. Con cifras claras y concretas, la institución establece que el costo semestral de la matrícula es de $2,850, mientras que el costo anual asciende a $5,700. A pesar de estas cifras, el Instituto reconoce la importancia de garantizar el acceso a la educación superior y, por ende, ofrece oportunidades de becas para aquellos que califiquen. La beca deportiva reduce el costo a $1,425 por semestre, mientras que la beca destinada a Familiares de Empleados del Gobierno disminuye aún más la carga financiera, dejándola en $400. Estas becas no solo alivian el peso económico para los estudiantes, sino que también reflejan el compromiso de la institución con la equidad y la inclusión en el acceso a la educación.";
+
+    function iniciarLectura() {
+      if ('speechSynthesis' in window) {
+        speechSynthesisInstance = new SpeechSynthesisUtterance(textoUniversidad);
+        window.speechSynthesis.speak(speechSynthesisInstance);
+      } else {
+        console.log('Tu navegador no soporta la síntesis de voz.');
+      }
+    }
+
+    function pausarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.pause();
+      }
+    }
+
+    function continuarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.resume();
+      }
+    }
+
+    function reiniciarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.cancel();
+        iniciarLectura();
+      }
+    }
+
+    function toggleSpeech() {
+      if (speechSynthesisInstance && window.speechSynthesis.speaking) {
+        pausarLectura();
+      } else {
+        continuarLectura();
+      }
+    }
+  </script>
+
+</body>
+
+</html>

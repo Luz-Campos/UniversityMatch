@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITA || UniversityMatch</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="../Estilos/style.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/stylevistaproductos.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/FooterStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-GDWlJng9xEwG1eYTTvWe4H9fA1Idb51fbrYw5YK51m6JzCj5lCR4gI6Rbmu1nCrXOjW1QrR7TjDXXESmtv5D5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTLCWXEBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4LTLCWXEBE');
+  </script>
+</head>
+
+<body onload="iniciarLectura()">
+  <!--Este es el encabezado de la página. Mostramos el logo y la barra de navegación-->
+  <section id="header">
+    <a href="../index.html"><img src="../img/Logo2.jpg" class="sin-borde" alt=" logo" title="Logo" width="250"></a>
+    <ul id="navbar">
+      <li><a href="../index.html" title="Landing-Page">Inicio</a></li>
+      <li><a href="../Formularios/Test.html" title="Test Vocacional">Test Vocacional</a></li>
+      <li><a class="active" href="../Rec_Catalogo/Catalogo.html" title="Universidades">Universidades</a></li>
+    </ul>
+  </section>
+
+  <section id="header2">
+    <ul id="navbar2">
+        <li><a href="Vista_ITA.html" title="Landing-Page">ITA</a></li>
+        <li><a href="Info_ITA.HTML" title="Landing-Page">Información General</a></li>
+        <li><a href="PlanITA.html" title="Test Vocacional">Plan de Estudios</a></li>
+        <li><a href="MatriculaITA.html" title="Matrícula">Matrícula</a></li>
+        <li><a class="active" href="IMGS_ITA.html" title="Universidades">Galería de Imágenes</a></li>
+        <li><a class="active" href="AplicarITA.html" title="Aplicar">¡Aplica ahora!</a></li>
+        <li><a href="https://ceneval.edu.mx/examenes-ingreso-exani_ii/" target="_blank">EXANII-II</a></li>
+        <button class="buttonLec" onclick="toggleSpeech()"><i class="fas fa-stop"></i> </button>
+        <button class="buttonLec" onclick="reiniciarLectura()"><i class="fas fa-play"></i> </button>   
+        <li><a href="https://aguascalientes.tecnm.mx/" target="_blank" class="btn-ir-pagina">Ir a la Página</a></li>
+    </ul>
+  </section>
+  
+
+  <!--Agregamos la información de la universidad-->
+  <section id="prodetails">
+    <div class="info">
+        <h1><strong>MISIÓN</strong></h1>
+        <p>Ofrecer educación superior tecnológica de calidad, para formar profesionistas que sean agentes de cambio, con la capacidad de generar conocimiento e innovación en su campo profesional, desempeñarse de manera ética, moral, incluyente y comprometida con el desarrollo sustentable y sostenible, e insertarse con éxito en la comunidad global.</p>
+    </div>
+    <div class="info">
+        <h1><strong>VISIÓN</strong></h1>
+        <p>Ser una Institución de Educación Superior Tecnológica reconocida internacionalmente por su Calidad Académica al generar conocimiento para el desarrollo sostenible y equitativo, de la humanidad.</p>
+    </div>
+  </section>
+
+  <section id="inMapa">
+    <h2>Mapa del Instituto Tecnológico de Aguascalientes</h2>
+    <section id="inMapaImg">
+        <div class="infoMapa">
+            <img src="../img/uniPics/ITA/PLANO.jpeg" alt="">
+        </div>
+        <div class="infoMapa">
+            <img src="../img/uniPics/ITA/INFORMACION.jpeg" alt="">
+        </div>
+    </section>
+  </section>
+
+  <section id="prodetailsMascota">
+    <div class="info">
+        <h2>Mascota del Instituto Tecnológico de Aguascalientes</h2>
+        <p>Durante la gestión administrativa del Ing. Agustín Vázquez Vera como Director del Instituto Tecnológico Regional de Aguascalientes, se convocó a los alumnos, clubes deportivos y maestros para que, previo concurso, seleccionar el símbolo o mascota de la Institución.
+        <br><br>Es así como triunfó el alumno Víctor Manuel Medellín Delgado con su alegoría de una águila real, con su birrete en la cabeza, y en el frente del birrete las siglas del Instituto, en la parte izquierda un engrane mecánico significando en tiempos pasados, aquí en el “Cerrito de la Cruz” el “Cerrito de las Liebres” habitaban algunas águilas reales y como recuerdo a estos hermosos pobladores de la tierra y dada su gallardía y majestuosidad se sigue perseverando esa tónica en el estudiante del Instituto Tecnológico de Aguascalientes.
+        <br><br>Al paso de los años, el Instituto Tecnológico de Aguascalientes ha mantenido el espíritu de su mascota, el águila real, que hace alusión al águila del escudo nacional mexicano y símbolo que fortalece el sentido de pertenencia de la actitud y espíritu de estudiantes, maestros y personal de apoyo a la educación del Instituto Tecnológico de Aguascalientes.</p>
+     </div>
+    <div class="infoMascota">
+        <img src="../img/uniPics/ITA/Mascota.jpg" id="ImgPrinc" alt="Dell_7480" title="Dell 7480">
+    </div>
+  </section>
+
+  <!--Pie de la página. Aquí mostramos información básica de la empresa-->
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><strong>Dirección:</strong> Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
+        <p><strong>Teléfono:</strong> 449 960 9129</p>
+        <p><strong>Horario de Atención:</strong> 9:00 - 20:00, Lunes - Domingo</p>
+      </div>
+      <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Formularios/Test.html">Test Vocacional</a></li>
+          <li><a href="../Rec_Catalogo/Catalogo.html">Universidades</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <ul class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Scripts -->
+
+  <script>
+    var speechSynthesisInstance;
+    var textoUniversidad = "La MISIÓN del Instituto Tecnológico de Aguascalientes es ofrecer educación superior tecnológica de calidad, para formar profesionistas que sean agentes de cambio, con la capacidad de generar conocimiento e innovación en su campo profesional, desempeñarse de manera ética, moral, incluyente y comprometida con el desarrollo sustentable y sostenible, e insertarse con éxito en la comunidad global. La VISIÓN del Instituto Tecnológico de Aguascalientes es Ser una Institución de Educación Superior Tecnológica reconocida internacionalmente por su Calidad Académica al generar conocimiento para el desarrollo sostenible y equitativo, de la humanidad.";
+
+    function iniciarLectura() {
+      if ('speechSynthesis' in window) {
+        speechSynthesisInstance = new SpeechSynthesisUtterance(textoUniversidad);
+        window.speechSynthesis.speak(speechSynthesisInstance);
+      } else {
+        console.log('Tu navegador no soporta la síntesis de voz.');
+      }
+    }
+
+    function pausarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.pause();
+      }
+    }
+
+    function continuarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.resume();
+      }
+    }
+
+    function reiniciarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.cancel();
+        iniciarLectura();
+      }
+    }
+
+    function toggleSpeech() {
+      if (speechSynthesisInstance && window.speechSynthesis.speaking) {
+        pausarLectura();
+      } else {
+        continuarLectura();
+      }
+    }
+  </script>
+
+<script>
+  var MainImg = document.getElementById("ImgPrinc");
+  var smallimgs = document.getElementsByClassName("small-img-col"); // Cambié el selector
+
+  smallimgs[0].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[0] a this
+  }
+  smallimgs[1].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[1] a this
+  }
+  smallimgs[2].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[2] a this
+  }
+  smallimgs[3].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[3] a this
+  }
+
+</script>
+
+  <script>
+    function getCareers() {
+      var categoria = $('#select-categoria').val();
+      $.ajax({
+        type: "POST",
+        url: "Consulta_ITA.php", // Ruta al archivo PHP que maneja la solicitud AJAX
+        data: {
+          categoria: categoria
+        },
+        dataType: 'json',
+        success: function(response) {
+          // Limpiar la lista de carreras
+          $('#lista-carreras ul').empty();
+          // Agregar cada carrera a la lista
+          response.forEach(function(carrera) {
+            $('#lista-carreras ul').append('<li>' + carrera + '</li>');
+          });
+        },
+        error: function(xhr, status, error) {
+          console.error(xhr.responseText);
+        }
+      });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+</body>
+
+</html>

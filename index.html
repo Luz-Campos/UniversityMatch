@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniversityMatch || Inicio</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="Estilos/style.css">
+  <link rel="stylesheet" href="Estilos/FooterStyle.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+  <script src="./scriptnav.js"></script>
+
+  <style>
+    .buttonLec {
+      background-color: #ffffff; 
+      color: rgb(0, 0, 0); 
+      border: none; /* Eliminar borde */
+      padding: 5px 10px; /* Espaciado interno */
+      cursor: pointer; /* Cursor al pasar sobre el botón */
+      border-radius: 5px; /* Borde redondeado */
+      font-size: 16px; /* Tamaño del texto */
+      margin-left: 0.2cm;
+      margin-bottom: 0cm;
+    }
+  
+    .buttonLec:hover {
+      background-color: #246d96; /* Cambio de color al pasar sobre el botón */
+    }
+  </style>
+
+</head>
+
+<body onload="iniciarLectura()">
+    <!--Este es el encabezado de la página. Mostramos el logo y la barra de navegación-->
+  <section id="header">
+    <a href="index.html"><img src="./img/Logo2.jpg" class="sin-borde" alt=" logo" title="Logo" width="250"></a>
+
+    <ul id="navbar">
+      <button class="buttonLec" onclick="toggleSpeech()"><i class="fas fa-stop"></i> </button>
+      <button class="buttonLec" onclick="reiniciarLectura()"><i class="fas fa-play"></i> </button>
+      <span>&nbsp;&nbsp;&nbsp;</span>
+      <li><a class="active" href="../index.html" title="Landing-Page">Inicio</a></li>
+      <li><a href="./Formularios/Test.html" title="Test Vocacional">Test Vocacional</a></li>
+      <li><a href="./Rec_Catalogo/Catalogo.html" title="Universidades">Universidades</a></li>
+    </ul>
+  
+    </div>
+  </section>
+
+<!--Está será la portada de la página. Mostramos una imágen llamativa acompañada de un pequeño slogan-->
+<!--También invitamos al usuario a acceder al catálogo presionando un botón-->
+
+<section id="hero">
+    <h2>Continúa tus estudios</h2>
+    <h1>Existe una universidad </h1>
+    <h1>ideal para tí.</h1>
+    <p>Realiza tu test vocacional para descubrir cuál es. </p>
+    <a href="./Formularios/Test.html" title=""><button>Test Vocacional</button></a>
+  </section>
+
+<!--Agregamos un carrusel, en el cual, mostraremos el logo de las diferentes marcas que manejamos;
+    mismas que estarán referenciadas al ctálogo de productos-->
+<section id="carrusel" class="section-p1">
+  <div class="carousel-unis-container">
+    <div class="carousel-marcas">
+      <a href="" title="Dell"><img src="img/uniLogos/ITA.png" alt="Dell" title="DELL"></a>
+      <a href="" title="HP"><img src="img/uniLogos/UPA.jpg" alt="HP" title="HP"></a>
+      <a href="" title="Acer"><img src="img/uniLogos/UTA.jpg" alt="Acer" title="ACER"></a>
+      <a href="" title="Lenovo"><img src="img/uniLogos/UAA.jpg" alt="Lenovo" title="LENOVO"></a>
+    </div>
+  </div>
+</section>
+
+<!--<Pie de la página. Aquí mostramos información básica de la empresa-->
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><strong>Dirección:</strong> Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
+        <p><strong>Teléfono:</strong> 449 960 9129</p>
+        <p><strong>Horario de Atención:</strong> 9:00 - 20:00, Lunes - Domingo</p>
+      </div>
+      <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Formularios/Test.html">Test Vocacional</a></li>
+          <li><a href="../Rec_Catalogo/Catalogo.html">Universidades</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <ul class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  
+<script>
+  var speechSynthesisInstance;
+  var textoUniversidad = "Bienvenidos y bienvenidas a 'university match'. Continúa tus estudios, Existe una universidad ideal para tí!. Realiza tu test vocacional y comencemos a descubrir cuál es.";
+
+  function iniciarLectura() {
+    if ('speechSynthesis' in window) {
+      speechSynthesisInstance = new SpeechSynthesisUtterance(textoUniversidad);
+      window.speechSynthesis.speak(speechSynthesisInstance);
+    } else {
+      console.log('Tu navegador no soporta la síntesis de voz.');
+    }
+  }
+
+  function pausarLectura() {
+    if (speechSynthesisInstance) {
+      window.speechSynthesis.pause();
+    }
+  }
+
+  function continuarLectura() {
+    if (speechSynthesisInstance) {
+      window.speechSynthesis.resume();
+    }
+  }
+
+  function reiniciarLectura() {
+    if (speechSynthesisInstance) {
+      window.speechSynthesis.cancel();
+      iniciarLectura();
+    }
+  }
+
+  function toggleSpeech() {
+    if (speechSynthesisInstance && window.speechSynthesis.speaking) {
+      pausarLectura();
+    } else {
+      continuarLectura();
+    }
+  }
+</script>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
