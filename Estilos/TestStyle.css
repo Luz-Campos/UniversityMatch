@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  margin: 0; /* Eliminar los márgenes para evitar espacio en blanco */
+  padding: 0; /* También eliminar cualquier padding */
+}
+
+form {
+  width: 100%; /* Hacer que el formulario abarque el 100% del ancho de la pantalla */
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+input[type="submit"] {
+  background-color: #4ebbc5;
+  color: #fff;
+  padding: 14px 24px; 
+  cursor: pointer;
+  font-size: 18px; 
+  margin-top: 20px; 
+  border: none;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%; /* Hacer que las imágenes dentro del formulario no excedan el ancho de la pantalla */
+}
+
+h1 {
+  margin-top: 40px; 
+  color: rgb(27, 152, 206);
+}
+
+label {
+  margin-top: 25px;
+  display: block;
+  margin-bottom: 10px; /* Reducido el espacio entre la pregunta y las respuestas */
+  color: #333;
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  margin-right: 0px; 
+  margin-left: 5px;
+  vertical-align: middle; /* Alineado verticalmente los botones de radio */
+}
+
+input[type="submit"] {
+  background-color: #4ebbc5;
+  color: #fff;
+  padding: 14px 24px; 
+  cursor: pointer;
+  font-size: 18px; 
+  margin-top: 20px; 
+}
+
+input[type="submit"]:hover {
+  background-color: #4ebbc5;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  color:black;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 70%; /* Ajustar el porcentaje de la altura */
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.buttonLec {
+  background-color: #246d96; 
+  color: white; 
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttonLec:hover {
+  background-color: #007bff;
+}
+
+.buttonLec i {
+  margin-right: 5px;
+}
+
+/* Estilos para el encabezado */
+h1 {
+  display: inline-block; /* Para permitir que los botones aparezcan al lado */
+  margin: 0.5cm; /* Eliminar margen */
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITA || UniversityMatch</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="../Estilos/style.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/stylevistaproductos.css">
+  <link rel="stylesheet" type="text/css" href="../Estilos/FooterStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-GDWlJng9xEwG1eYTTvWe4H9fA1Idb51fbrYw5YK51m6JzCj5lCR4gI6Rbmu1nCrXOjW1QrR7TjDXXESmtv5D5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTLCWXEBE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4LTLCWXEBE');
+  </script>
+</head>
+
+<body onload="iniciarLectura()">
+  <!--Este es el encabezado de la página. Mostramos el logo y la barra de navegación-->
+  <section id="header">
+    <a href="../index.html"><img src="../img/Logo2.jpg" class="sin-borde" alt=" logo" title="Logo" width="250"></a>
+
+    <ul id="navbar">
+      <li><a href="../index.html" title="Landing-Page">Inicio</a></li>
+      <li><a href="../Formularios/Test.html" title="Test Vocacional">Test Vocacional</a></li>
+      <li><a class="active" href="../Rec_Catalogo/Catalogo.html" title="Universidades">Universidades</a></li>
+    </ul>
+  </section>
+
+  <section id="header2">
+    <ul id="navbar2">
+        <li><a href="../vistas/Vista_ITA.html" title="Landing-Page">ITA</a></li>
+        <li><a href="../vistas/Info_ITA.HTML" title="Landing-Page">Información General</a></li>
+        <li><a href="../vistas/PlanITA.html" title="Test Vocacional">Plan de Estudios</a></li>
+        <li><a href="../vistas/MatriculaITA.html" title="Matrícula">Matrícula</a></li>
+        <li><a class="active" href="../vistas/IMGS_ITA.html" title="Universidades">Galería de Imagenes</a></li>
+        <button class="buttonLec" onclick="toggleSpeech()"><i class="fas fa-stop"></i> </button>
+        <button class="buttonLec" onclick="reiniciarLectura()"><i class="fas fa-play"></i> </button>
+    </ul>
+  </section>
+  
+
+  <!--Agregamos la información de la universidad-->
+  <section id="inRetiImg">
+    <div class="infoRetiImg", style="text-align: center;"><img src="../img/uniPics/ITA/Carreras/ITICS.png" alt=""></div>
+  </section>
+  <h2>PERFIL DE INGRESO</h2>
+  <section id="prodetails">
+    <div class="infoReti">
+        <p>La ingeniería en Tecnologías de la Información y Comunicaciones está conformada por el conjunto de recursos necesarios para el procesamiento de la información, así como la administración o gestión de las comunicaciones. Crea, diseña, implementa y administra sistemas de cómputo relacionados con las Tecnologías de Información y las Comunicaciones, así como de redes de cómputo, bases de datos para la toma de decisiones y dispositivos con software empotrado.
+        <br>Si quieres saber si la carrera de Ingeniería en Tecnologías de la Información y Comunicaciones es para ti, pregúntate si tienes:</p>
+        <ul>
+            <li>Interés por las redes de computadoras y en aprender a desarrollar aplicaciones para dispositivos móviles.</li>
+            <li>Gusto o habilidad para las ciencias exactas (Matemáticas, Cálculo diferencial e Integral, etc).</li>
+            <li>Capacidad intelectual y habilidades de razonamiento lógico utilizando sistemas de cómputo.</li>
+            <li>Sentido de responsabilidad, compromiso con el estudio e interés por las tecnologías.</li>
+            <li>Inquietud por conocer el funcionamiento de las comunicaciones y telecomunicaciones.</li>
+            <li>Habilidad en programación empleando un lenguaje computacional.</li>
+        </ul>
+        <p>Si crees tener tres de algunas de estas cualidades, entonces ¡¡Eres candidato para estudiar Ingeniería en Tecnologías de la Información y Comunicaciones!!</p>
+        <p>Los aspirantes a ingresar en las Ingenierías ofrecidas por el Instituto Tecnológico de Aguascalientes deberán tener:</p>
+        <ul>
+            <li>Capacidad de análisis y síntesis.</li>
+            <li>Pensamiento matemático.</li>
+            <li>Comprensión lectora con capacidad para</li>
+            <li>identificar y aplicar elementos de la lengua.</li>
+            <li>Habilidad para resolver problemas en las áreas de matemáticas y física.</li>
+            <li>Actitud crítica.</li>
+        </ul>
+    </div>
+  </section>
+  <h2>PERFIL DE EGRESO</h2>
+  <section id="prodetails">
+    <div class="infoReti">
+        <ul>
+            <li>Diseñar, implementar y administrar redes de cómputo y comunicaciones, bajomodelos y estándares internacionales, para satisfacer las necesidades de información de los sistemas sociales, garantizando aspectos de seguridad y calidad.</li>
+            <li>Diseñar, desarrollar y mantener sistemas de bases de datos asegurando la integridad, disponibilidad y confidencialidad de la información almacenada.</li>
+            <li>Integrar las diferentes arquitecturas de hardware y administrar plataformas de software para incrementar la productividad en las organizaciones.</li>
+            <li>Implementar sistemas de seguridad bajo políticas internas de las organizaciones y estándares aceptados.</li>
+            <li>Observar los aspectos legales del uso y explotación de las Tecnologías de la Información y Comunicaciones.</li>
+            <li>Desarrollar e implementar sistemas de información para el control y la toma de decisiones utilizando metodologías basadas en estándares internacionales.</li>
+            <li>Analizar, diseñar y programar dispositivos con software empotrado.</li>
+            <li>Utilizar tecnologías y herramientas actuales y emergentes acordes a las necesidades del entorno.</li>
+            <li>Integrar soluciones basadas en sistemas de comunicaciones que involucren tecnologías actuales y emergentes.</li>
+            <li>Desempeñar funciones de consultoría y auditoría en el campo de las Tecnologías de la Información y Comunicaciones.</li>
+            <li>Crear empresas en el ámbito de las Tecnologías de la Información y Comunicaciones.</li>
+            <li>Administrar proyectos que involucren Tecnologías de la Información y Comunicaciones en las organizaciones conforme a requerimientos establecidos.</li>
+        </ul>
+    </div>
+  </section>
+  
+  <h2>RETÍCULA</h2>
+  <section id="inRetiImg">
+      <div class="infoRetiImg", style="text-align: center;"><img src="../img/uniPics/ITA/Reticulas/RetiITICS.jpeg" alt=""></div>
+  </section>
+
+  <!--Pie de la página. Aquí mostramos información básica de la empresa-->
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><strong>Dirección:</strong> Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
+        <p><strong>Teléfono:</strong> 449 960 9129</p>
+        <p><strong>Horario de Atención:</strong> 9:00 - 20:00, Lunes - Domingo</p>
+      </div>
+      <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Formularios/Test.html">Test Vocacional</a></li>
+          <li><a href="../Rec_Catalogo/Catalogo.html">Universidades</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <ul class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Scripts -->
+
+  <script>
+    var speechSynthesisInstance;
+    var textoUniversidad = "La carrera de Ingeniería en Tecnologías de la Información y Comunicaciones, se enfoca en la gestión y desarrollo de tecnologías de la información y comunicación (TIC). Los estudiantes aprenden sobre redes de computadoras, seguridad informática, sistemas distribuidos, administración de servidores y desarrollo de software, preparándolos para trabajar en áreas como la gestión de infraestructuras tecnológicas y el desarrollo de soluciones digitales.";
+
+    function iniciarLectura() {
+      if ('speechSynthesis' in window) {
+        speechSynthesisInstance = new SpeechSynthesisUtterance(textoUniversidad);
+        window.speechSynthesis.speak(speechSynthesisInstance);
+      } else {
+        console.log('Tu navegador no soporta la síntesis de voz.');
+      }
+    }
+
+    function pausarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.pause();
+      }
+    }
+
+    function continuarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.resume();
+      }
+    }
+
+    function reiniciarLectura() {
+      if (speechSynthesisInstance) {
+        window.speechSynthesis.cancel();
+        iniciarLectura();
+      }
+    }
+
+    function toggleSpeech() {
+      if (speechSynthesisInstance && window.speechSynthesis.speaking) {
+        pausarLectura();
+      } else {
+        continuarLectura();
+      }
+    }
+  </script>
+
+<script>
+  var MainImg = document.getElementById("ImgPrinc");
+  var smallimgs = document.getElementsByClassName("small-img-col"); // Cambié el selector
+
+  smallimgs[0].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[0] a this
+  }
+  smallimgs[1].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[1] a this
+  }
+  smallimgs[2].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[2] a this
+  }
+  smallimgs[3].onclick = function () {
+    MainImg.src = this.querySelector('img').src; // Cambié smallimg[3] a this
+  }
+
+</script>
+
+  <script>
+    function getCareers() {
+      var categoria = $('#select-categoria').val();
+      $.ajax({
+        type: "POST",
+        url: "Consulta_ITA.php", // Ruta al archivo PHP que maneja la solicitud AJAX
+        data: {
+          categoria: categoria
+        },
+        dataType: 'json',
+        success: function(response) {
+          // Limpiar la lista de carreras
+          $('#lista-carreras ul').empty();
+          // Agregar cada carrera a la lista
+          response.forEach(function(carrera) {
+            $('#lista-carreras ul').append('<li>' + carrera + '</li>');
+          });
+        },
+        error: function(xhr, status, error) {
+          console.error(xhr.responseText);
+        }
+      });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+</body>
+
+</html>

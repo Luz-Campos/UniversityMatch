@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+
+    
+
+    /* Estilo de la caja del producto */
+    .product-box {
+        background-color: #fff; /* Fondo blanco */
+        border: 1px solid #ddd; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        margin: 20px; /* Márgenes externos */
+        padding: 20px; /* Relleno interno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    /* Estilo del título del producto */
+    .product-title {
+        color: #007bff; /* Texto azul brillante */
+        font-size: 1.5em; /* Tamaño de fuente grande */
+        margin-bottom: 10px; /* Márgen inferior */
+    }
+
+    /* Estilo de la descripción del producto */
+    .product-description {
+        font-size: 1.2em; /* Tamaño de fuente mediano */
+        margin-bottom: 15px; /* Márgen inferior */
+    }
+
+    /* Estilo del precio del producto */
+    .product-price {
+        color: #28a745; /* Texto verde para el precio */
+        font-size: 1.3em; /* Tamaño de fuente mediano */
+    }
+
+    /* Estilo del botón de compra */
+    .buy-button {
+        background-color: #007bff; /* Fondo azul brillante */
+        color: #fff; /* Texto blanco */
+        padding: 10px 20px; /* Relleno interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+        font-size: 1.2em; /* Tamaño de fuente mediano */
+    }
+
+    .buy-button:hover {
+        background-color: #0056b3; /* Cambiar color al pasar el ratón */
+    }
+}
